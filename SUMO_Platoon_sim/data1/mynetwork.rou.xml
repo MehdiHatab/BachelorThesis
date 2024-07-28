@@ -1,0 +1,7 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   <vType id="egoVehicle" guiShape="passenger/van" accel="1000" decel="1000" sigma="0" length="4" minGap="6" maxSpeed="80"/>
+   <vType id="otherVehicle" accel="3" decel="0.8" sigma="0.5" length="4" minGap="10" maxSpeed="50"/>
+   <route id="def" edges="r1"/>
+   <vehicle id="ego" type="egoVehicle"   route="def" depart="0" departLane="0" departPos="base" departSpeed="0" color="0,1,0" />
+   <flow id="flow" type="otherVehicle" route="def" begin="0" period="1" end="7"/>
+</routes>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 10.02.2016 17:00:25 by Netedit Version 0.25.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netedit.exeConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\michaelhartmann\Programme\SUMO_MATLAB_Interface\data\testStraightRoad.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\michaelhartmann\Programme\SUMO_MATLAB_Interface\data\testStraightRoad.net.xml"/>
+    </output>
+
+    <processing>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+        <junctions.corner-detail value="0"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="0.25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-672.58,46.86,1243.14,47.96" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="gneE0" from="gneJ0" to="gneJ3" priority="1" shape="-672.58,46.86 41.16,47.96 1243.14,46.86">
+        <lane id="gneE0_0" index="0" speed="300" length="1915.72" shape="-672.58,45.21 41.16,46.31 1243.14,45.21"/>
+    </edge>
+
+    <junction id="gneJ0" type="unregulated" x="-672.58" y="46.86" incLanes="" intLanes="" shape="-672.58,46.81 -672.58,43.61"/>
+    <junction id="gneJ3" type="unregulated" x="1243.14" y="46.86" incLanes="gneE0_0" intLanes="" shape="1243.14,43.61 1243.14,46.81"/>
+
+</net>

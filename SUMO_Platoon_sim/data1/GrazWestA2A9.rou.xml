@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+  
+<vType accel="2" decel="3.0" id="egoCar" length="5.0" minGap="2.5" maxSpeed="50" sigma="0" />
+<vType accel="2.0" decel="3.0" id="CarA" length="5.0" minGap="2.5" maxSpeed="45.0" sigma="0.1" />
+<vType accel="2.0" decel="3.0" id="CarB" length="5.0" minGap="2.5" maxSpeed="40.0" sigma="0.1" />
+<vType accel="2.0" decel="3.0" id="Truck" length="12.5" minGap="2.5" maxSpeed="30.0" sigma="0.5" />
+
+<vehicles>
+<trip id="t1a" depart="0" from="start_edge2" to="stop_edge" type="CarA" color="1,0,0" />
+<trip id="ego" depart="0" from="start_edge" to="stop_edge" type="egoCar" color="0,1,0" /> 
+<trip id="t1c" depart="1" from="start_edge" to="stop_edge" type="CarB" color="0,0,1" />
+<trip id="t2a" depart="20" from="188716194" to="4901025" type="Truck" color="1,0,0" /> 
+<trip id="t2b" depart="22" from="188716194" to="4901025" type="Truck" color="1,1,0" /> 
+<trip id="t2c" depart="24" from="188716194" to="4901025" type="Truck" color="1,0,1" /> 
+</vehicles>
+
+</routes>

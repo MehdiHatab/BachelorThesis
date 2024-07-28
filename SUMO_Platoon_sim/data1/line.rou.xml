@@ -1,0 +1,10 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   <!-- <vType id="egoVehicle" guiShape="passenger/van" accel="4" decel="7" sigma="1" length="4" minGap="4" maxSpeed="80"/> -->
+   <vType id="otherVehicle" accel="3" decel="7" sigma="1" length="4" minGap="4" maxSpeed="35"/>
+   <route id="def" edges="lane1"/>
+   <!-- <route id="def1" edges="3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"/> -->
+   <vehicle id="veh0" type="otherVehicle"   route="def" depart="0" departLane="0" departPos="base" departSpeed="0" color="0,1,0" />
+   <!-- <vehicle id="x" type="otherVehicle"   route="def" depart="1.5" departLane="0" departPos="base" departSpeed="0" color="0,1,1" /> -->
+   <!-- <vehicle id="x1" type="otherVehicle"   route="def" depart="1.5" departLane="0" departPos="base" departSpeed="0" color="0,0,1" /> -->
+   <flow id="veh" type="otherVehicle" route="def" begin="1" departLane="0" departPos="base" period="4" end="70"/>
+</routes>

@@ -1,0 +1,7 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   <vType id="ego12" accel="8" decel="4.5" sigma="0" length="3" minGap="2" maxSpeed="250"/>
+   <route id="def" edges="gneE0"/>
+   <vehicle id="ego" type="ego12"   route="def" depart="0" departLane="0" departPos="base" departSpeed="0" color="0,1,0" />
+   <vehicle id="x" type="ego12"   route="def" depart="1" departLane="0" departPos="base" departSpeed="0" color="0,1,0" />
+   
+</routes>

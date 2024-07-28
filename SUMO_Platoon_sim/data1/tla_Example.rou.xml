@@ -1,0 +1,13 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   <vType id="egoVehicle" guiShape="passenger/van" accel="1000" decel="1000" sigma="0" length="4" minGap="0" maxSpeed="80"/>
+   <vType id="otherVehicle" accel="3" decel="3" sigma="1" length="4" minGap="2" maxSpeed="10"/>
+   <route id="anticlock" edges="E0 E1 E2 E3 E4 E5 E6 E0 E1 E2 E3 E4 E5 E6 E0 E1 E2 E3 E4 E5 E6 E0 E1 E2 E3 E4 E5 E6"/>
+   <route id="anticlockA" edges="E1 E2 E3 E4 E5 E6 E0 E1 E2 E3 E4 E5 E6 E0 E1 E2 E3 E4 E5 E6 E0 E1 E2 E3 E4 E5 E6"/>
+   <route id="clock"     edges="-E4 -E3 -E2 -E1 -E0 -E6 -E5 -E4 -E3 -E2 -E1 -E0 -E6 -E5 -E4 -E3 -E2 -E1 -E0 -E6 -E5 "/>
+   <vehicle id="ego" type="egoVehicle"   route="anticlock" depart="0" departLane="0" departPos="base" departSpeed="0" color="0,1,0" />   
+   <vehicle id="x"   type="otherVehicle" route="anticlockA" depart="0" color="1,1,0"/>
+   <vehicle id="c"   type="otherVehicle" route="clock" depart="0" color="0,0,1"/>
+   <vehicle id="c2"   type="otherVehicle" route="clock" depart="2" color="0,0,1"/>
+   <vehicle id="a2"   type="otherVehicle" route="anticlock" depart="3" color="1,0,0"/>  
+   <vehicle id="b"   type="otherVehicle" route="anticlock" depart="10" color="1,0,0"/> 
+</routes>
